@@ -1,0 +1,93 @@
+$themeColor: #4880bc;
+.container{
+  display: inline;
+
+
+
+  .header {
+    padding: 15px;
+    text-align: center;
+    background: $themeColor;
+    color: white;
+    font-size: 15px;
+  }
+
+
+
+
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+            'main main main right right right';
+
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+
+
+    div {
+      background-color: rgba(255, 255, 255, 0.8);
+
+      table {
+        border-collapse: collapse;
+        width: 75%;
+        margin:10px 50px;
+
+        th {
+          background-color: $themeColor;
+          color: white;
+        }
+
+        & td, th {
+          border: 1px solid #ddd;
+          text-align: left;
+        }
+
+        th, td {
+          padding: 15px;
+          text-align: left;
+          padding: 8px;
+        }
+        tr:nth-child(even){background-color: #f2f2f2}
+        tr:hover {background-color: #f5f5f5;}
+
+
+      }
+      form{
+        margin: 20px;
+        padding: 20px;
+        border-style: solid;
+        border-color:$themeColor;
+        width: 75%;
+        .form-group{
+          display: block;
+
+        }
+        input {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+
+        .btn-submit{
+          padding: 10px 20px;
+        ;
+        }
+
+
+      }
+
+      .functions-content{
+        @extend form
+
+      }
+
+
+    }
+  }
+
+
+
+
+}

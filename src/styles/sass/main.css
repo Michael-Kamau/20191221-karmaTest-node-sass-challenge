@@ -1,0 +1,68 @@
+.container {
+  display: inline;
+}
+.container .header {
+  padding: 15px;
+  text-align: center;
+  background: #4880bc;
+  color: white;
+  font-size: 15px;
+}
+.container .grid-container {
+  display: grid;
+  grid-template-areas: "main main main right right right";
+}
+.container .grid-container .item3 {
+  grid-area: main;
+}
+.container .grid-container .item4 {
+  grid-area: right;
+}
+.container .grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.container .grid-container div table {
+  border-collapse: collapse;
+  width: 75%;
+  margin: 10px 50px;
+}
+.container .grid-container div table th {
+  background-color: #4880bc;
+  color: white;
+}
+.container .grid-container div table td, .container .grid-container div table th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.container .grid-container div table th, .container .grid-container div table td {
+  padding: 15px;
+  text-align: left;
+  padding: 8px;
+}
+.container .grid-container div table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.container .grid-container div table tr:hover {
+  background-color: #f5f5f5;
+}
+.container .grid-container div form, .container .grid-container div .functions-content {
+  margin: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-color: #4880bc;
+  width: 75%;
+}
+.container .grid-container div form .form-group, .container .grid-container div .functions-content .form-group {
+  display: block;
+}
+.container .grid-container div form input, .container .grid-container div .functions-content input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.container .grid-container div form .btn-submit, .container .grid-container div .functions-content .btn-submit {
+  padding: 10px 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

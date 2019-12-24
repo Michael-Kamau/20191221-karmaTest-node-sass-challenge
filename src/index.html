@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="http://localhost:3480/styles">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <title>Classic schedules</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Teacher Schedule Website</h1>
+        <p>Add Schedule and view available schedules</p>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+
+    <div class="grid-container">
+        <div class="item3">
+            <form action="http://localhost:3480/schedule" method="POST">
+                <h3>Schedule Creation Form</h3>
+                <label for="teacher">Teacher</label>
+                <input type="text"  name="teacher">
+                <div class="form-group">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text"   name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="room">Room</label>
+                    <input type="text"   name="room">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" name="date">
+                </div>
+
+
+
+                <!--Other fields-->
+                <button type="submit" class="btn btn-primary btn-submit">Add to Schedule</button>
+            </form>
+        </div>
+        <div class="item4">
+            <table id="Trans-table">
+                <thead>
+                <tr>
+                    <th>Teacher</th>
+                    <th>Subject</th>
+                    <th>Room</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <div class="functions-content" id="content">
+                Insert Integer for fibonacci button and any type for Palindrome: <input type="text" name="fname" id="first"><br>
+
+                <button id="fibonacci"  class="btn-submit">Fibonacci(integer input)</button>
+
+                <button id="palindrome" class="btn-submit">Palindrome(any input)</button>
+
+                Result: <span id="result" />
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://localhost:3480/javascript">
+    </script>
+    <script type="text/javascript" src="http://localhost:3480/javascript2">
+    </script>
+    <script>
+        $(document).ready(function() {
+            setInterval(function () {
+
+                loadData() ;
+            }, 3000);
+        });
+
+
+
+        operations.init();
+
+
+    </script>
+
+</div>
+</body>
+</html>
