@@ -1,12 +1,6 @@
 window.operations = window.operations || {};
 
 (function() {
-    var modulus = function() {
-        var x = parseInt(document.getElementById('first').value);
-        var y =parseInt( document.getElementById('second').value);
-        document.getElementById('result').innerHTML = (x % y).toString();
-    };
-
 
     var fibonacci = function() {
         var num = parseInt(document.getElementById('first').value);
@@ -18,23 +12,6 @@ window.operations = window.operations || {};
         }
         document.getElementById('result').innerHTML = b.toString();
     };
-
-
-    var divide = function() {
-        var x = parseFloat(document.getElementById('first').value);
-        var y = parseFloat(document.getElementById('second').value);
-        document.getElementById('result').innerHTML = (x / y).toString();
-    };
-
-
-
-    var multiply = function() {
-        var x = parseInt(document.getElementById('first').value);
-        var y = parseInt(document.getElementById('second').value);
-        document.getElementById('result').innerHTML = (x * y).toString();
-    };
-
-
 
     var palindrome = function() {
         var x = document.getElementById('first').value;

@@ -9,7 +9,6 @@ const path = require('path');
 const app = express();
 const port = 3480;
 
-
 //The class 'Schedule' which has the fields teacher and subject
 
 class Schedule {
@@ -72,6 +71,6 @@ app.get('/javascript2', (req, res) => {
     res.sendFile(path.join(__dirname+'/src/js/main.js'));
 });
 
-app.listen(port, () => console.log(`Commerce site is listening on port: ${port}!`));
+app.listen(port, () => console.log(`Schedule site is listening on port: ${port}!`));
 
 
