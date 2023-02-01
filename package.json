@@ -23,7 +23,7 @@
     "sync-request": "^4.0.2"
   },
   "devDependencies": {
-    "karma": "^4.4.1",
+    "karma": "^6.4.1",
     "karma-cli": "",
     "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^2.0.1"
